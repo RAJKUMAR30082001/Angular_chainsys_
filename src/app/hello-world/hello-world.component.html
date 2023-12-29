@@ -1,0 +1,12 @@
+<h1>hello-world works! {{head}}</h1>
+<br>
+<p>{{name}}</p>
+<!-- two way data binding  -->
+<input type="text" [(ngModel)]="name">
+<input type="text" (input)="UcanSeeMe($event)">
+<p>{{value}}</p>
+<!-- event handling-->
+<p>{{click}}</p>
+<button (click)="onClick()">me</button>
+<button (click)="refersh()">refresh</button>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Input</title>
+</head>
+<body>
+    <!-- form event handling -->
+    <form (ngSubmit)="findvalid()" >
+        <label for="name">Name:</label>
+        <!-- two way databinding -->
+        <input type="text" id="name" name="name" [(ngModel)]="name">
+        <button type="submit">Submit</button>
+    </form>
+    <pre>{{res}}</pre>
+    
+
+      
+</body>
+</html>
+
